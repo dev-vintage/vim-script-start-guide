@@ -1,3 +1,3 @@
-# <img src="./assets/vim-logo.png" alt="Vim-Logo" style="width: 15px;"/> Vim Script Start Guide <img src="./assets/vim-logo.png" alt="Vim-Logo" style="width: 15px;"/>
+# <img src="./assets/vim-logo.png" alt="Vim-Logo" style="max-width: 15px;"/> Vim Script Start Guide <img src="./assets/vim-logo.png" alt="Vim-Logo" style="max-width: 15px;"/>
 
 
