@@ -1,4 +1,2 @@
-# ![](./assets/vim-logo.png =30x) Vim Script Start Guide ![](./assets/vim-logo.png =30x)
-
-
+# <img src="./assets/vim-logo.png" width="30"> Vim Script Start Guide <img src="./assets/vim-logo.png" width="30">
 
