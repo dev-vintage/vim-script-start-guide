@@ -1,3 +1,4 @@
-# <img src="./assets/vim-logo.png" alt="Vim-Logo" style="max-width: 15px;" /> Vim Script Start Guide <img src="./assets/vim-logo.png" alt="Vim-Logo" style="max-width: 15px;" />
+# ![](./assets/vim-logo.png =30x) Vim Script Start Guide ![](./assets/vim-logo.png =30x)
+
 
 
