@@ -4,6 +4,6 @@
 
 ## Basics
 
-- [Echoing Messages](./guide/echoing-messages.md)
+- [Echoing Messages](/guide/echoing-messages.md)
 
 
