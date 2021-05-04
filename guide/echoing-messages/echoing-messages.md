@@ -43,3 +43,5 @@ nnoremap <space> za
 This doesn't always work (that's one of those ugly corners of Vimscript), but in most cases it does. Later we'll talk about when it won't (and why that happens).
 
 Let a star please!!
+
+Created by José Vitor based on https://learnvimscriptthehardway.stevelosh.com/
