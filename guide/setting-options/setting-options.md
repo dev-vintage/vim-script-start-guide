@@ -30,5 +30,39 @@ The line numbers should reappear. Now run it again:
 ```
 They should disappear once more. Adding a ! (exclamation point or "bang") to a boolean option toggles it.
 
+### Checking Options
+
+You can ask Vim what an option is currently set to by using a ?. Run these commands and watch what happens after each:
+```vim
+:set number
+:set number?
+:set nonumber
+:set number?
+```
+
+Notice how the first :set number? command displayed number while the second displayed nonumber.
+
+### Options with Values
+
+Some options take a value instead of just being off or on. Run the following commands and watch what happens after each:
+
+```vim
+:set number
+:set numberwidth=10
+:set numberwidth=4
+:set numberwidth?
+```
+
+The numberwidth option changes how wide the column containing line numbers will be. You can change non-boolean options with :set &lt;name&gt;=&lt;value&gt;, and check them the usual way (:set &lt;name&gt;?).
+
+Try checking what a few other common options are set to:
+
+```vim
+:set wrap?
+:set shiftround?
+:set matchtime?
+```
+
+
 
 
