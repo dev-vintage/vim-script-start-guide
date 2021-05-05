@@ -5,6 +5,6 @@
 ## Basics
 
 - [Echoing Messages](/guide/echoing-messages/echoing-messages.md)
-
+- [Setting Options](/guide/setting-options/setting-options.md)
 ### Open a Pull Request and contribute
 
