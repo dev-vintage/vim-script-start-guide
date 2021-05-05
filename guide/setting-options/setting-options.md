@@ -18,5 +18,17 @@ The line numbers should disappear. number is a boolean option: it can be off or 
 
 All boolean options work this way. :set name turns the option on and :set noname turns it off.
 
+### Toggling Boolean Options
+
+You can also "toggle" boolean options to set them to the opposite of whatever they are now. Run this:
+```vim
+:set number!
+```
+The line numbers should reappear. Now run it again:
+```vim
+:set number!
+```
+They should disappear once more. Adding a ! (exclamation point or "bang") to a boolean option toggles it.
+
 
 
