@@ -40,3 +40,17 @@ You can also map modifier keys like Ctrl and Alt. Run this:
 
 Now pressing Ctrl+d on your keyboard will run dd.
 
+## Commenting
+
+Remember in the first lesson where we talked about comments? Mapping keys is one of the places where Vim comments don't work. Try running this command:
+
+```vim
+:map <space> viw " Select word
+```
+If you try pressing space now, something horrible will almost certainly happen. Why?
+
+When you press the space bar now, Vim thinks you want it to do what viw&lt;space&gt;"&lt;space&gt;>Select&lt;space&gt;word would do. Obviously this isn't what we want.
+
+If you look closely at the effect of this mapping you might notice something strange. Take a few minutes to try to figure out exactly what happens when you use it, and why that happens.
+
+Don't worry if you don't get it right away -- we'll talk about it more soon.
