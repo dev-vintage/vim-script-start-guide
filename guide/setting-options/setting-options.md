@@ -75,6 +75,4 @@ Finally, you can specify more than one option in the same :set command to save o
 
 Notice how both options were set and took effect in the last command.
 
-
-
-
+Created by José Vitor based on https://learnvimscriptthehardway.stevelosh.com/
