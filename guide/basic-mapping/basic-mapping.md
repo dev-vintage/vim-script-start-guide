@@ -21,3 +21,22 @@ We already have a key for "delete the character under the cursor", so let's chan
 ```
 
 Now put your cursor on a line somewhere and press - again. This time Vim deletes the entire line, because that's what dd does.
+
+## Special Characters
+
+You can use &lt;keyname&gt; to tell Vim about special keys. Try running this command:
+
+```vim
+:map <space> viw
+```
+
+Put your cursor on a word in your text and press the space bar. Vim will visually select the word.
+
+You can also map modifier keys like Ctrl and Alt. Run this:
+
+```vim
+:map <c-d> dd
+```
+
+Now pressing Ctrl+d on your keyboard will run dd.
+
