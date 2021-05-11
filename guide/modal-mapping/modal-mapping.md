@@ -40,7 +40,31 @@ save from the mapping itself?
 
 In practice it turns out that this isn't really a problem. Once you start using Vim
 often you won't be thinking about the individual keys you're typing any more.
-You'll think: "delete a line" and not "press dd". Your fingers and brain will 
+You'll think: "delete a line" and not "press dd". Your fingers and brain will
 learn your mappings and the keys themselves will become subconscious.
 
+## Insert Mode
 
+Now that we've covered how to map keys in normal and visual mode, let's move on to insert mode.
+Run this command:
+
+```vim
+:imap <c-d> dd
+```
+You might think that this would let you press Ctrl+d whenever you're in insert mode to delete
+the current line. This would be handy because you wouldn't need to go back into normal
+mode to cut out lines.
+
+The problem is that Vim is doing exactly what we told it to. We said:
+"when I press &lt;c-d&gt; I want you to do what pressing d and d would normally do".
+Well, normally when you're in insert mode and press the d key twice, you get
+two ds in a row!
+
+To make this mapping do what we intended we need to be very explicit.
+Run this command to change the mapping:
+
+```vim
+:imap <c-d> <esc>dd
+```
+
+Created by José Vitor based on https://learnvimscriptthehardway.stevelosh.com/
