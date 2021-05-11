@@ -54,3 +54,5 @@ When you press the space bar now, Vim thinks you want it to do what viw&lt;space
 If you look closely at the effect of this mapping you might notice something strange. Take a few minutes to try to figure out exactly what happens when you use it, and why that happens.
 
 Don't worry if you don't get it right away -- we'll talk about it more soon.
+
+Created by José Vitor based on https://learnvimscriptthehardway.stevelosh.com/
