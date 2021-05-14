@@ -24,4 +24,37 @@ about why, but first remove those mappings by running the following commands:
 :nunmap \
 ```
 
+## Recursion
+
+Run this command:
+
+```vim
+:nmap dd O<esc>jddk
+```
+
+At first glance it might look like this would map dd to:
+
+Open a new line above this one.
+Exit insert mode.
+Move back down.
+Delete the current line.
+Move up to the blank line just created.
+Effectively this should "clear the current line". Try it.
+
+Vim will seem to freeze when you press dd. If you press &lt;c-c&gt; you'll get Vim back, 
+but there will be a ton of empty lines in your file! What happened?
+
+This mapping is actually recursive! When you press dd, Vim says:
+
+dd is mapped, so perform the mapping.
+Open a line.
+Exit insert mode.
+Move down a line.
+dd is mapped, so perform the mapping.
+Open a line.
+Exit insert mode.
+Move down a line.
+dd is mapped, so perform the mapping, and so on.
+This mapping can never finish running! Go ahead and remove this terrible thing with the following command:
+
 
