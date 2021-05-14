@@ -6,6 +6,8 @@
 
 - [Echoing Messages](/guide/echoing-messages/echoing-messages.md)
 - [Setting Options](/guide/setting-options/setting-options.md)
+## Mapping
+
 - [Basic Mapping](/guide/basic-mapping/basic-mapping.md)
 - [Modal Mapping](/guide/modal-mapping/modal-mapping.md)
 
