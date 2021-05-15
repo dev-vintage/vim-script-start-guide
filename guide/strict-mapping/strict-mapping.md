@@ -55,6 +55,20 @@ Open a line.
 Exit insert mode.
 Move down a line.
 dd is mapped, so perform the mapping, and so on.
-This mapping can never finish running! Go ahead and remove this terrible thing with the following command:
+This mapping can never finish running! Go ahead and remove this
+terrible thing with the following command:
+
+```vim
+:nunmap dd
+```
+
+## Side Effects
+
+One downside of the *map commands is the danger of recursing. Another is that their behavior can change if you install a plugin that maps keys they depend on.
+
+When you install a new Vim plugin there's a good chance that you won't use and memorize every mapping it creates. Even if you do, you'd have to go back and look through your ~/.vimrc file to make sure none of your custom mappings use a key that the plugin has mapped.
+
+This would make installing plugins tedious and error-prone. There must be a better way.
+
 
 
