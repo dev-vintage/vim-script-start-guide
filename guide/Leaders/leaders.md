@@ -66,4 +66,24 @@ even if they use a different leader.
 Finally, many Vim plugins create mappings that start with &lt;leader&gt;. If you've already got it set 
 up they'll work properly and will feel familiar right out of the box.
 
+## Local Leader
+
+Vim has a second "leader" key called "local leader". This is meant to be a prefix for mappings that 
+only take effect for certain types of files, like Python files or HTML files.
+
+We'll talk about how to make mappings for specific types of files later in the book, but you can go 
+ahead and set your "localleader" now:
+
+```vim
+:let maplocalleader = "\\"
+```
+
+Notice that we have to use \\ and not just \ because \ is the escape character in Vimscript strings.
+You'll learn more about this later.
+
+Now you can use &lt;localleader&gt; in mappings and it will work just like &lt;leader&gt; does
+(except for resolving to a different key, of course).
+
+Feel free to change this key to something else if you don't like backslash.
+
 
