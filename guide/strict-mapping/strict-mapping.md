@@ -70,5 +70,23 @@ When you install a new Vim plugin there's a good chance that you won't use and m
 
 This would make installing plugins tedious and error-prone. There must be a better way.
 
+## Nonrecursive Mapping
+
+Vim offers another set of mapping commands that will not take mappings into account when they perform their actions. Run these commands:
+
+:nmap x dd
+:nnoremap \ x
+Now press \ and see what happens.
+
+When you press \ Vim ignores the x mapping and does whatever it would do for x by default. 
+Instead of deleting the current line, it deletes the current character.
+
+Each of the *map commands has a *noremap counterpart that ignores other mappings:
+noremap, nnoremap, vnoremap, and inoremap.
+
+When should you use these nonrecursive variants instead of their normal counterparts?
+
+
+
 
 
