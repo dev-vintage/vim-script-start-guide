@@ -32,4 +32,38 @@ keystroke can easily be absorbed into muscle memory.
 If you think this might be a good idea, you're right, and it turns out that Vim already has mechanisms
 for this "prefix" key!
 
+## Leader 
+
+Vim calls this "prefix" key the "leader". You can set your leader key to whatever you like. 
+Run this command:
+
+```vim
+:let mapleader = "-"
+```
+
+You can replace - with any key you like. I personally like , even though it shadows a useful 
+function, because it's very easy to type.
+
+When you're creating new mappings you can use <leader> to mean "whatever I have my leader key setto".
+Run this command:
+
+```vim
+:nnoremap <leader>d dd
+```
+
+Now try it out by pressing your leader key and then d. Vim will delete the current line.
+
+Why bother with setting &lt;leader&gt; at all, though? Why not just include your "prefix" key directly 
+in your mapping commands? There are three good reasons.
+
+First of all, you may decide you need the normal function of your leader later on down the road.
+Defining it in one place makes it easy to change later.
+
+Second, when someone else is looking at your ~/.vimrc file they'll immediately know what you mean
+when you say &lt;leader&gt;. They can simply copy your mapping into their own ~/.vimrc if they like it
+even if they use a different leader.
+
+Finally, many Vim plugins create mappings that start with &lt;leader&gt;. If you've already got it set 
+up they'll work properly and will feel familiar right out of the box.
+
 
