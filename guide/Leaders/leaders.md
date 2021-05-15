@@ -13,4 +13,23 @@ Depending on how you work you may find others that you never use.
 Those are safe to map, but that only gives us six keys to work with. What happened
 to Vim's legendary customizability?
 
+## Mapping Key Sequences
+
+Unlike Emacs, Vim makes it easy to map more than just single keys. Run these commands:
+
+```vim
+:nnoremap -d dd
+:nnoremap -c ddO
+```
+
+Try them out by typing -d and -c (quickly) in normal mode. The first creates a custom mapping to 
+delete a line, while the second "clears" a line and puts you into insert mode.
+
+This means you can pick a key that you don't care about (like -) as a "prefix" key and create mappings
+on top of it. It means you'll have to type an extra key to activate the mappings, but one extra
+keystroke can easily be absorbed into muscle memory.
+
+If you think this might be a good idea, you're right, and it turns out that Vim already has mechanisms
+for this "prefix" key!
+
 
